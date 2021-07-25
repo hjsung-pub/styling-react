@@ -1,0 +1,94 @@
+/* 변수 */
+$point-color : blue;
+$border-color :#dfdfdf;
+
+
+
+.s-login-wrap{
+    padding: 3rem 5rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #f5f6f7;
+
+    .s-login-inner{
+        max-width: 46rem;
+        margin: 0 auto;
+    }
+
+    .s-login-title{
+        padding: 2rem 2rem 5rem;
+        font-size: 3rem;
+        color: #333;
+    }
+
+    .s-left-box{
+        padding-top: 1.5rem;
+    }
+}
+.s-point{
+    color: $point-color;
+    font-size: inherit;
+}
+.s-login-form{
+    display: block;
+    width: 100%;
+
+    input{
+        display: block;
+        width: 100%;
+        height: 4.5rem;
+        padding: 0 2rem;
+        background-color: #fff;
+        border: 1px solid $border-color;
+        border-radius: 0;
+
+        & + input{
+            margin-top: 1rem;
+        }
+    }
+
+    button{
+        width: 100%;
+        height: 6rem;
+        margin-top: 1rem;
+        border: 0;
+        border-radius: 0;
+        color: #fff;
+        background-color: #e0352c;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+.s-left-box{
+    text-align: left;
+}
+.s-ipt-chk{
+    label{
+        display:inline-block;
+        margin-left:1rem;
+    }
+}
+.s-login-btn-box{
+    margin-top: 3rem;
+    padding-top: 2.5rem ;
+    border-top:1px solid $border-color;
+
+    button{
+        position: relative;
+        margin:0 1rem;
+        border: 0;
+        background-color: unset;
+        color: #888;
+
+        & + button::before{
+            content: '';
+            position: absolute;
+            top:50%;
+            left: -1rem;
+            width: 1px;
+            height: 1.4rem;
+            margin-top: -.7rem;
+            background-color: $border-color;
+        }
+    }
+}
